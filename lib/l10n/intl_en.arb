@@ -1,0 +1,13 @@
+{
+  "loginPageTitle": "Login",
+  "loginPageEmail": "Email",
+  "loginPagePassword": "Password",
+  "loginPageLogin": "Login",
+  "loginPageLoginWithGoogle": "Sign in with Google",
+  "loginPageCreateAccount": "Create an account",
+  "loginPageLoginFailure": "Login Failure",
+  "loginPageLoggingIn": "Logging in...",
+  "loginPageInvalidEmail": "Invalid email",
+  "loginPageInvalidPassword": "Invalid password",
+  "registerPageTitle": "Sign up"
+}
