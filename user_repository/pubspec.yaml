@@ -1,0 +1,15 @@
+name: user_repository
+
+publish_to: 'none'
+
+version: 1.0.0
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_auth: ^0.16.1
+  google_sign_in: ^4.5.1
+

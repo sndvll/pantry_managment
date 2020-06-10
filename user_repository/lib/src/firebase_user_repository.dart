@@ -1,12 +1,14 @@
 import 'dart:async';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:user_repository/src/user_repository.dart';
 
-class UserRepository {
+class FirebaseUserRepository implements UserRepository {
   final FirebaseAuth _firebaseAuth;
   final GoogleSignIn _googleSignIn;
 
-  UserRepository({FirebaseAuth firebaseAuth, GoogleSignIn googleSignin})
+  FirebaseUserRepository({FirebaseAuth firebaseAuth, GoogleSignIn googleSignin})
       : _firebaseAuth = firebaseAuth ?? FirebaseAuth.instance,
         _googleSignIn = googleSignin ?? GoogleSignIn();
 
