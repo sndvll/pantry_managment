@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gold_door/generated/l10n.dart';
+import 'package:user_repository/user_repository.dart';
 
-import '../../user_repository.dart';
 import '../bloc/bloc.dart';
 import 'login_form.dart';
 

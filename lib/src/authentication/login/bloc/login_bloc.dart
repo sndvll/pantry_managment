@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
-import 'package:gold_door/src/validators.dart';
+import 'package:gold_door/src/utils/validators.dart';
 import 'package:meta/meta.dart';
 import 'package:rxdart/rxdart.dart';
+import 'package:user_repository/user_repository.dart';
 
-import '../../user_repository.dart';
 import 'login_event.dart';
 import 'login_state.dart';
 

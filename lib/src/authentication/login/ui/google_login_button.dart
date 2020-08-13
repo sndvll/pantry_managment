@@ -11,7 +11,7 @@ class GoogleLoginButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RaisedButton.icon(
+    return FlatButton.icon(
       icon: Icon(FontAwesomeIcons.google, color: Colors.white),
       onPressed: () {
         BlocProvider.of<LoginBloc>(context).add(

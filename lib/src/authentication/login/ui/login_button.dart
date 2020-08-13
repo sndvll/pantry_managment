@@ -10,8 +10,10 @@ class LoginButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
+    return FlatButton(
       onPressed: _onPressed,
+      color: Theme.of(context).accentColor,
+      textColor: Colors.white,
       child: Text(this.label),
     );
   }

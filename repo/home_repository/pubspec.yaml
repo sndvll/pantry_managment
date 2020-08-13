@@ -1,0 +1,15 @@
+name: home_repository
+
+publish_to: 'none'
+
+version: 1.0.0
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  rxdart: ^0.24.1
+  equatable: ^1.2.0
+  cloud_firestore: ^0.13.6

@@ -8,8 +8,12 @@ import 'intl/messages_all.dart';
 // Made by Localizely
 // **************************************************************************
 
+// ignore_for_file: non_constant_identifier_names, lines_longer_than_80_chars
+
 class S {
   S();
+  
+  static S current;
   
   static const AppLocalizationDelegate delegate =
     AppLocalizationDelegate();
@@ -19,7 +23,9 @@ class S {
     final localeName = Intl.canonicalizedLocale(name); 
     return initializeMessages(localeName).then((_) {
       Intl.defaultLocale = localeName;
-      return S();
+      S.current = S();
+      
+      return S.current;
     });
   } 
 
@@ -27,6 +33,7 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
+  /// `Login`
   String get loginPageTitle {
     return Intl.message(
       'Login',
@@ -36,6 +43,7 @@ class S {
     );
   }
 
+  /// `Email`
   String get loginPageEmail {
     return Intl.message(
       'Email',
@@ -45,6 +53,7 @@ class S {
     );
   }
 
+  /// `Password`
   String get loginPagePassword {
     return Intl.message(
       'Password',
@@ -54,6 +63,7 @@ class S {
     );
   }
 
+  /// `Login`
   String get loginPageLogin {
     return Intl.message(
       'Login',
@@ -63,6 +73,7 @@ class S {
     );
   }
 
+  /// `Sign in with Google`
   String get loginPageLoginWithGoogle {
     return Intl.message(
       'Sign in with Google',
@@ -72,6 +83,7 @@ class S {
     );
   }
 
+  /// `Create an account`
   String get loginPageCreateAccount {
     return Intl.message(
       'Create an account',
@@ -81,6 +93,7 @@ class S {
     );
   }
 
+  /// `Login Failure`
   String get loginPageLoginFailure {
     return Intl.message(
       'Login Failure',
@@ -90,6 +103,7 @@ class S {
     );
   }
 
+  /// `Logging in...`
   String get loginPageLoggingIn {
     return Intl.message(
       'Logging in...',
@@ -99,6 +113,7 @@ class S {
     );
   }
 
+  /// `Invalid email`
   String get loginPageInvalidEmail {
     return Intl.message(
       'Invalid email',
@@ -108,6 +123,7 @@ class S {
     );
   }
 
+  /// `Invalid password`
   String get loginPageInvalidPassword {
     return Intl.message(
       'Invalid password',
@@ -117,6 +133,7 @@ class S {
     );
   }
 
+  /// `Sign up`
   String get registerPageTitle {
     return Intl.message(
       'Sign up',

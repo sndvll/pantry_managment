@@ -1,0 +1,13 @@
+name: icons_repository
+
+publish_to: 'none'
+
+version: 1.0.0
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  font_awesome_flutter: ^8.8.1

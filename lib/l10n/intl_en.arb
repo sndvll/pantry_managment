@@ -1,4 +1,5 @@
 {
+  "@@locale": "en",
   "loginPageTitle": "Login",
   "loginPageEmail": "Email",
   "loginPagePassword": "Password",

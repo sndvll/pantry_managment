@@ -3,7 +3,7 @@ import 'package:bloc/bloc.dart';
 class SimpleBlocDelegate extends BlocDelegate {
   @override
   void onEvent(Bloc bloc, Object event) {
-    //print(event);
+    print(event);
     super.onEvent(bloc, event);
   }
 

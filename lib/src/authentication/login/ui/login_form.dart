@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gold_door/generated/l10n.dart';
+import 'package:user_repository/user_repository.dart';
 
 import '../../authentication.dart';
-import '../../user_repository.dart';
 import '../bloc/bloc.dart';
 import 'create_account_button.dart';
 import 'google_login_button.dart';
@@ -86,7 +86,7 @@ class _LoginFormState extends State<LoginForm> {
       child: BlocBuilder<LoginBloc, LoginState>(
         builder: (context, state) {
           return Padding(
-            padding: EdgeInsets.all(20.0),
+            padding: EdgeInsets.only(left: 20, right: 20, top: 150),
             child: Form(
               child: ListView(
                 children: <Widget>[

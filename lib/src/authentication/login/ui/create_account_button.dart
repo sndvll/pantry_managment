@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gold_door/src/authentication/register/register.dart';
-
-import '../../user_repository.dart';
+import 'package:user_repository/user_repository.dart';
 
 class CreateAccountButton extends StatelessWidget {
   final UserRepository _userRepository;
